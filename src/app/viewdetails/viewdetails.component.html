@@ -1,0 +1,20 @@
+<div class="col-mid-4"></div>
+<div class="col-md-4 text-center">
+<h3>View</h3>
+<div class="dtlview" *ngFor="let details of studentDetails">
+    <div *ngIf="details.code==item">
+        <p>name:{{details.name}}</p>
+        <p>code:{{details.code}}</p>
+
+        <p>English:{{details.English}}</p>
+        <p>Java:{{details.Java}}</p>
+        <p>Vb:{{details.Vb}}</p>
+        <p>cobol:{{details.cobol}}</p>
+        
+    </div>
+</div>
+
+
+
+
+</div>

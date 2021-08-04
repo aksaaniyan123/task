@@ -7,10 +7,27 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  uname="";
+pswd="";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+
+login(){
+  var name=this.uname;
+  var pass=this.pswd;
+  if (name=="aksa" && pass=="1234")
+  {
+  
+  alert("login successfull")
+
+this.router.navigateByUrl("student")
+}
+else{
+  alert("invalid account")
+}
+}
 }

@@ -1,0 +1,43 @@
+
+<div class="col-mid-4"></div>
+<div class="col-md-4 text-center">
+<h3>Student Details</h3>
+<div class="table-responsive">
+    <table class="table table-stripped">
+
+
+        <thead class="table-dark">
+            <tr>
+
+                <th>code </th>
+                <th>Name </th>
+                <th>Dept</th>
+                <th>Totalmarks </th>
+               
+               
+            </tr>
+            
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let details of studentDetails">
+                <td>{{details["code"]}}</td>
+            <td>{{details["name"]}}</td>
+            <td>{{details["dept"]}}</td>
+            <td>{{details["totalmarks"]}}</td>
+          
+            <td><button type="button" (click)="view(details.code)">view </button></td>
+        </tr> 
+        </tbody>
+    </table>
+
+</div>
+<div class="detail" *ngIf="flag">
+    <app-viewdetails [item]="stdcode" ></app-viewdetails>
+</div>
+
+
+
+
+
+</div>
