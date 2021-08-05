@@ -1,15 +1,20 @@
 <div class="col-mid-4"></div>
 <div class="col-md-4 text-center">
-<h3>View</h3>
-<div class="dtlview" *ngFor="let details of studentDetails">
-    <div *ngIf="details.code==item">
-        <p>name:{{details.name}}</p>
-        <p>code:{{details.code}}</p>
+    <button (click)="goback()">Go Back</button>
+    
+<h3> Student Details View</h3>
 
-        <p>English:{{details.English}}</p>
-        <p>Java:{{details.Java}}</p>
-        <p>Vb:{{details.Vb}}</p>
-        <p>cobol:{{details.cobol}}</p>
+
+<div class="dtlview" *ngFor="let details of studentDetails">
+    <div *ngIf="details.code==id">
+        
+        <p >name:{{details.name}}</p>
+        <p>code:{{details.code}}</p>
+        
+        <p [ngStyle]="{'color':details.English > '100' ? 'green' : 'red' }">English:{{details.English}}</p>
+        <p [ngStyle]="{'color':details.Java > '100' ? 'green' : 'red' }">Java:{{details.Java}}</p>
+        <p [ngStyle]="{'color':details.Vb > '100' ? 'green' : 'red' }">Vb:{{details.Vb}}</p>
+        <p [ngStyle]="{'color':details.cobol > '100' ? 'green' : 'red' }">cobol:{{details.cobol}}</p>
         
     </div>
 </div>
@@ -18,3 +23,7 @@
 
 
 </div>
+
+
+
+

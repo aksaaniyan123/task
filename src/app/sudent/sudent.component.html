@@ -26,14 +26,11 @@
             <td>{{details["dept"]}}</td>
             <td>{{details["totalmarks"]}}</td>
           
-            <td><button type="button" (click)="view(details.code)">view </button></td>
+        <td><button type="button"[routerLink]="['/viewdetails', details.code]">view detail</button></td>
         </tr> 
         </tbody>
     </table>
 
-</div>
-<div class="detail" *ngIf="flag">
-    <app-viewdetails [item]="stdcode" ></app-viewdetails>
 </div>
 
 

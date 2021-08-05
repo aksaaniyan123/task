@@ -15,7 +15,7 @@ export class SudentComponent implements OnInit {
      { code:1001, name: "surya", dept:"BCA",totalmarks:900  },
      {code:1002,  name: "veera", dept:"BCA",totalmarks:700  },
     { code:1003, name: "maya", dept:"BCA", totalmarks:400 },
-    { code:1004, name: "jaya", dept:"BCA", totalmarks:1400 }
+    { code:1004, name: "jaya", dept:"BCA", totalmarks:300 }
    
   ]
 

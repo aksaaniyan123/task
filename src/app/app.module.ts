@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SudentComponent } from './sudent/sudent.component';
 import { FormsModule } from '@angular/forms';
 import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
     RegisterComponent,
     HomeComponent,
     SudentComponent,
-    ViewdetailsComponent
+    ViewdetailsComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
