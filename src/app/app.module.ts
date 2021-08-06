@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SudentComponent } from './sudent/sudent.component';
 import { FormsModule } from '@angular/forms';
 import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
-import { TestComponent } from './test/test.component';
+import{ HttpClientModule}from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +19,14 @@ import { TestComponent } from './test/test.component';
     HomeComponent,
     SudentComponent,
     ViewdetailsComponent,
-    TestComponent
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataserviceService } from '../dataservice.service';
 
 @Component({
   selector: 'app-sudent',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class SudentComponent implements OnInit {
   flag=0;
-  stdcode=""
+  stdcode="";
+  html_data:any=[];
+  
 
   studentDetails: any = [
      { code:1000, name: "jerry", dept:"BCA",totalmarks:500 },
@@ -19,7 +22,7 @@ export class SudentComponent implements OnInit {
    
   ]
 
-  constructor(private router: Router ) { }
+  constructor(private router: Router,private dataservice:DataserviceService) { }
 
   ngOnInit(): void {
   }
@@ -31,8 +34,15 @@ export class SudentComponent implements OnInit {
     console.log(scode);
     this.stdcode=scode;
     
-  
-    
-
   }
+  showdata(){
+    this.dataservice.showdata()
+    .subscribe((result:any)=>{
+      
+      this.html_data=result.response['#result-set-1'];
+      console.log(result);
+      
+    })
+  }
+ 
 }
