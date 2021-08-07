@@ -10,13 +10,13 @@
 <div class="dtlview" *ngFor="let details of studentDetails">
     <div *ngIf="details.code==id">
         
-        <p >name:{{details.name}}</p>
-        <p>code:{{details.code}}</p>
+        <p >Name:{{details.name}}</p>
+        <p>Code:{{details.code}}</p>
         
         <p [ngClass]="isSpecial?'special':''"[ngStyle]="{'color':details.English > 100 ? 'green' : 'red' }">English:{{details.English}}</p>
         <p [ngStyle]="{'color':details.Java > 100 ? 'green' : 'red' }">Java:{{details.Java}}</p>
         <p  [ngStyle]="{'color':details.Vb > 100 ? 'green' : 'red' }">Vb:{{details.Vb}}</p>
-        <p  [ngStyle]="{'color':details.cobol > 100 ? 'green' : 'red' }">cobol:{{details.cobol}}</p>
+        <p  [ngStyle]="{'color':details.cobol > 100 ? 'green' : 'red' }">Cobol:{{details.cobol}}</p>
         
     </div>
 </div>

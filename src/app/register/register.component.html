@@ -14,42 +14,68 @@
 		  <hr>
 	  
 		  <label for="email"><b>Name</b></label>
-		  <input type="text" placeholder="Enter name" name="" id="" required>
+		  <input type="text" placeholder="Enter name" [(ngModel)]="name"name="nme" id="" required>
+		  <p>student name:{{name}}</p>
 	  
+
+
+
 		  <label for="psw"><b>Age</b></label>
-		  <input type="text" placeholder="Enter age" name="" id="" required>
-	  
+		  <input type="text" placeholder="Enter age" [(ngModel)]="age"name="ag" id="" required>
+		  <p>student age:{{age}}</p>
+
+
+
+
 		  <label for="psw-repeat"><b>Email Id</b></label>
-		  <input type="text" placeholder="Enter email id" name="" id="" required>
+		  <input type="text" placeholder="Enter email id"[(ngModel)]="email" name="mail" id="" required>
+		  <p>student emailid:{{email}}</p>
 		  <hr>
-		  <label for="psw-repeat"><b>gender</b></label>
+
+
+
+
+		  <label for="psw-repeat"><b>Gender </b></label>
 		  <hr>
-		  <input type="radio" id="html" name="fav_language" value="HTML">
+		  <input type="radio" id="" [(ngModel)]="gender" name="fav_language" value="male">
   <label for="html">Male</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="" [(ngModel)]="gender" name="fav_language" value="female">
   <label for="css">Female</label><br>
 
+<p>gender selected:{{gender}}</p>
 
 
 		  <label for="psw-repeat"><b>Courses</b></label><br>
 		  <hr>
 		  <fieldset data-role = "controlgroup" data-type = "horizontal">
-            <input type = "checkbox" id = "checkbox 1" />
-            <label for = "checkbox 1">BCA</label>
+            <input type="radio" id="" [(ngModel)]="courses" name="fav_language" value="Bca">
+			<label for="html">Bca</label>
+		
+			
 
-            <input type = "checkbox" id = "checkbox 2" />
-            <label for = "checkbox 2">BCOM</label>
+            <input type="radio" id="" [(ngModel)]="courses" name="fav_language" value="Bcom">
+			<label for="html">Bcom</label>
+		
 
-            <input type = "checkbox" id = "checkbox 3" />
-            <label for = "checkbox 3">BBA</label>
+			<input type="radio" id="" [(ngModel)]="courses" name="fav_language" value="Bba">
+			<label for="html">Bba</label>
+			<p>course selected:{{courses}}</p>
+
+		
          </fieldset>
 		 
+
+
 		  
-		  <input type="submit" value="Register" class="btn" (click)="register()">
+		  <input type="submit" value="Register" class="btn btn-success" (click)="register()">
 		</div>
 	  
+
+
+
+
 		<div class="container signin">
-		  <p>Already have an account? <a href="#">Sign in</a>.</p>
+		  <p>Already have an account? <a href="login">Sign in</a>.</p>
 		</div>
 	  </form>
 </body>

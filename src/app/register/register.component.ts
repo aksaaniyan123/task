@@ -8,11 +8,23 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private router:Router) { }
+
+  name="";
+  age="";
+  email="";
+ gender="";
+courses="";
+ 
+ 
+  constructor(private router:Router) { 
+    
+  }
 
   ngOnInit(): void {
   }
   register(){
+   
+
     alert("successfully registered")
     this.router.navigateByUrl("login")
   }

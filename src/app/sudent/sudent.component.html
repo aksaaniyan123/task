@@ -3,7 +3,7 @@
 <div class="col-md-4 text-center">
 <h3>Student Details</h3>
 <div class="table-responsive">
-    <table class="table table-stripped">
+    <table class="table table-dark table-striped">
 
 
         <thead class="table-dark">
@@ -26,7 +26,7 @@
             <td>{{details["dept"]}}</td>
             <td>{{details["totalmarks"]}}</td>
           
-        <td><button type="button"[routerLink]="['/viewdetails', details.code]">view detail</button></td>
+        <td><button type="button" class="btn btn-outline-light"[routerLink]="['/viewdetails', details.code]">view detail</button></td>
         </tr> 
         </tbody>
     </table>
@@ -36,16 +36,25 @@
 </div>
 
  <div><button class="style"type="submit" (click)="showdata()">SHOWDATA</button></div>
-<div *ngFor="let details of html_data">
+<div class="tbl" *ngFor="let details of html_data">
     
-  
-    
-    <td>{{details.Clientid}}</td>&nbsp;
-    <td>{{details.ClientFirstNAme}}</td>&nbsp;
-    <td>{{details.BankAc}}</td>&nbsp;
+  <table class="table table-dark table-striped">
+      <tr>
+          <td>Cilentid</td>
+          <td>Client Firstname</td>
+          <td>BankAcc</td>
+          <td>BankName</td>
+        
+      </tr>
+    <tr>
+    <td>{{details.Clientid}}</td>
+    <td>{{details.ClientFirstNAme}}</td>
+    <td>{{details.BankAc}}</td>
 
-    <td>{{details.BankName}}</td>&nbsp;
-    
+    <td>{{details.BankName}}</td>
+</tr>
+</table>
+
 
 </div> 
 </div>

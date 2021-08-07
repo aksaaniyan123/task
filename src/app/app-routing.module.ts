@@ -11,7 +11,7 @@ import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 
 const routes: Routes = [
   {
-    path:'' , component:HomeComponent
+    path:'home' , component:HomeComponent
   },
   {
     path:'register' , component:RegisterComponent
