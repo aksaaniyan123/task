@@ -2,8 +2,9 @@
 <div class="col-mid-4"></div>
 
 <div class="col-md-4 text-center">
-    <button (click)="goback()">Go Back</button>
-    
+    <img src="../assets/images/grad.png" class="img-fluid" alt="...">
+  
+   
 <h3> Student Details View</h3>
 
 
@@ -17,7 +18,7 @@
         <p [ngStyle]="{'color':details.Java > 100 ? 'green' : 'red' }">Java:{{details.Java}}</p>
         <p  [ngStyle]="{'color':details.Vb > 100 ? 'green' : 'red' }">Vb:{{details.Vb}}</p>
         <p  [ngStyle]="{'color':details.cobol > 100 ? 'green' : 'red' }">Cobol:{{details.cobol}}</p>
-        
+        <button (click)="goback()" >Go Back</button>
     </div>
 </div>
 

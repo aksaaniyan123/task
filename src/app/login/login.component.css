@@ -4,6 +4,7 @@
 
 html,body{
 background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -82,4 +83,11 @@ color: white;
 
 .links a{
 margin-left: 4px;
+}
+.img-fluid{
+    width: 60px;
+    height: 60px;
+}
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

@@ -5,31 +5,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-</head>
+
+
+</head>  <img src="../assets/images/grad.png" class="img-fluid" alt="...">
 <body>
 	<form action="action_page.php">
 		<div class="container">
-		  <h1>Register</h1>
+		  <h1>REGISTER</h1>
+		
 		  <p>Please fill in this form to create an account.</p>
 		  <hr>
 	  
 		  <label for="email"><b>Name</b></label>
 		  <input type="text" placeholder="Enter name" [(ngModel)]="name"name="nme" id="" required>
-		  <p>student name:{{name}}</p>
+		  <p>Student name:{{name}}</p>
 	  
 
 
 
 		  <label for="psw"><b>Age</b></label>
 		  <input type="text" placeholder="Enter age" [(ngModel)]="age"name="ag" id="" required>
-		  <p>student age:{{age}}</p>
+		  <p>Student age:{{age}}</p>
 
 
 
 
 		  <label for="psw-repeat"><b>Email Id</b></label>
 		  <input type="text" placeholder="Enter email id"[(ngModel)]="email" name="mail" id="" required>
-		  <p>student emailid:{{email}}</p>
+		  <p>Student emailid:{{email}}</p>
 		  <hr>
 
 
@@ -42,7 +45,7 @@
   <input type="radio" id="" [(ngModel)]="gender" name="fav_language" value="female">
   <label for="css">Female</label><br>
 
-<p>gender selected:{{gender}}</p>
+<p>Gender selected:{{gender}}</p>
 
 
 		  <label for="psw-repeat"><b>Courses</b></label><br>
@@ -59,7 +62,7 @@
 
 			<input type="radio" id="" [(ngModel)]="courses" name="fav_language" value="Bba">
 			<label for="html">Bba</label>
-			<p>course selected:{{courses}}</p>
+			<p>Course selected:{{courses}}</p>
 
 		
          </fieldset>
@@ -67,7 +70,7 @@
 
 
 		  
-		  <input type="submit" value="Register" class="btn btn-success" (click)="register()">
+		  <input type="submit" value="REGISTER" class="btn btn-success" (click)="register()">
 		</div>
 	  
 

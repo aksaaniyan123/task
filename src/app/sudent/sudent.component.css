@@ -1,6 +1,6 @@
 .style{
     background-color: aqua;
-    margin-top: 350%;
+    margin-top: 425%;
     float: right;
    
     
@@ -9,4 +9,8 @@
     margin-top: 200px;
     margin-left: 300px;
     margin-right: 700px;
+}
+.img-fluid{
+    width: 60px;
+    height: 60px;
 }
